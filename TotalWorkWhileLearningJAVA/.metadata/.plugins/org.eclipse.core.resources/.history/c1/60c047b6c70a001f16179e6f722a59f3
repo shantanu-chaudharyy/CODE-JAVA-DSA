@@ -1,0 +1,17 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class SolvingRoots {
+
+	public static void main(String[] args) {
+
+
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		
+		int a = (int) Math.sqrt(n);
+		System.out.println(a);
+	}
+
+}

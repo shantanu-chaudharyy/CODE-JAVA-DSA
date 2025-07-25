@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;While.SumOfNEvenAndOddno&apos; to &apos;XtoThePowerN&apos;&#x0D;&#x0A;- Original project: &apos;Lecture&apos;&#x0D;&#x0A;- Original element: &apos;While.SumOfNEvenAndOddno&apos;&#x0D;&#x0A;- Renamed element: &apos;While.XtoThePowerN&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SumOfNEvenAndOddno&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;While{SumOfNEvenAndOddno.java[SumOfNEvenAndOddno" matchStrategy="1" name="XtoThePowerN" qualified="false" references="true" similarDeclarations="false" stamp="1713862274189" textual="false" version="1.0"/>
+</session>

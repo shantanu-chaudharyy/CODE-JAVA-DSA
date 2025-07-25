@@ -1,0 +1,34 @@
+
+//aabccbaa
+//a
+
+//bccb
+
+package String;
+
+import java.util.Scanner;
+
+public class RemoveCharacter {
+
+	public static void removecharacter(String str , Character ch) 
+	{
+		String result = "";
+		for(int i = 0; i<str.length(); i++) 
+		{
+			if(ch!=str.charAt(i)) 
+			{
+				result+=str.charAt(i);
+			}
+		}
+		System.out.println(result);
+	}
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String str = scan.nextLine();
+		Character ch = scan.next().charAt(0);
+
+		removecharacter(str, ch);
+	}
+
+}

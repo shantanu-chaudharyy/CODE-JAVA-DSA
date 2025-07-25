@@ -1,0 +1,36 @@
+package Leetcode;
+
+import java.util.Scanner;
+
+public class ReverseWordsInAString {
+//      01234567890
+//EX:	HE IS A BOY
+//   	12345678901
+	 public static void ReverseWord(String str) 
+	 {
+		 int i = str.length()-1;
+		 int StartIndex = i;
+		 int End = str.length() -1;
+		 String result = "";
+		 
+		 while( i>=0) 
+		 {
+			 if(str.charAt(i) == ' ') 
+			 {
+				 StartIndex = i;
+				 result += str.substring(StartIndex +1, End);
+				 System.out.print(" ");
+				 End = StartIndex;
+			 }
+		 }
+		 System.out.println(result);
+	 }
+	
+	public static void main(String[] args) {
+
+Scanner scan = new Scanner(System.in);
+String str = scan.nextLine();
+ReverseWord(str);
+	}
+
+}

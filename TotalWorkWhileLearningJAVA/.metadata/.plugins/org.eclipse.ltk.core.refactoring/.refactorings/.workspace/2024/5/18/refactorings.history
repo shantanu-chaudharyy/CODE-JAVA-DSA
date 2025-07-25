@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ConditionalAndWhileLoop&apos; to &apos;ConditionalAndforLoop&apos;" description="Rename resource &apos;ConditionalAndWhileLoop&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ConditionalAndWhileLoop" name="ConditionalAndforLoop" stamp="1714549592443" updateReferences="true"/>
+</session>

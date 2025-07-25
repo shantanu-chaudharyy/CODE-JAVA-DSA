@@ -1,0 +1,66 @@
+package ARRAY2D;
+
+import java.util.Scanner;
+
+public class SpiralPattern2D {
+
+	public static void Spiral(int arr[][], int n, int m) {
+		int total = n * m;
+
+		int upperRow = 0;
+		int lowerRow = n - 1;
+		int upperColm = 0;
+		int lowerColm = m - 1;
+
+		int count = 0;
+		
+		while(count < total) 
+		{
+			for(int i = upperColm; i<lowerColm; i++) 
+			{
+				System.out.print(arr[upperRow][i]);
+				count++;
+			}
+				upperRow++;
+				
+			for(int i = upperRow; i<lowerRow; i++) 
+			{
+				System.out.print(arr[i][lowerColm]);
+				count++;
+			}
+			   lowerColm--;
+			   
+			for(int i = lowerColm; i<upperColm; i++) 
+			{
+				System.out.print(arr[lowerRow][i]);
+				count++;
+			}
+			   upperRow--;
+			   
+			for(int i = lowerRow; i<upperRow; i++) 
+			{
+				System.out.println(arr[i][upperColm]);
+				count++;
+			}
+			lowerColm++;
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+		int m = scan.nextInt();
+
+		int mat[][] = new int[n][m];
+
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < m; j++) {
+				mat[i][j] = scan.nextInt();
+			}
+		}
+
+	}
+
+}

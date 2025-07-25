@@ -1,0 +1,35 @@
+//we need binary to number
+//
+//1.) we will take a input as binary i.e 1,0.
+//2.) then we will take a integer name pv ( place value will increase by twice in every iteration) 
+//3.) then we will initiate a loop which will rum till answer is not 0 (N not equal to zero)
+//4.) then we will take out the last digit by using modulous funtion i.e (N%10).
+//5.) after geting last digit we will have our answer by using formula (answer = pv*lastdigit)
+//6.)then we will divide the input 'N' by 10 so that we can get next last digit by doing modulous of 10.
+//7.)we will increace pv by 2 time in every iteration.
+//8.) then we will come out of loop then give our print statement as syso(answer)
+
+package Assignments;   
+import java.util.Scanner;
+
+public class BinaryToNum {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		
+		int pv = 1;  
+		int answer = 0;                                         
+		while(n!=0) {
+			
+//			int lastDigit = n%10;
+			answer = answer + n * pv;
+			
+			n = n/2;
+			pv = pv * pv;
+		}
+		System.out.println(answer);
+	}
+
+}
