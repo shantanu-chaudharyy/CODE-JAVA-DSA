@@ -3,8 +3,9 @@ public class Stack {
     private int size;   // track number of elements
 
     public Stack() {
-        head = null;
-        size = 0;
+      head = null;
+     size = 0;
+
     }
 
     public int getSize() { 
@@ -12,29 +13,32 @@ public class Stack {
     }
 
     public boolean isEmpty() {
-        return head == null;
+  
+        return(head==null);
     }
 
     public void push(int element) {
-        Node newNode = new Node(element);
-        newNode.next = head; // link new node to old top
-        head = newNode;      // update top
+   
+        Node NewNode = new Node(element);
+        NewNode.next = head;
+        head = NewNode;
         size++;
     }
 
-    public int pop() {
-        if (isEmpty()) {
-            return -1; // stack underflow
+    public int  pop() {
+        if(isEmpty()) {
+            return -1;
         }
         int poppedData = head.data;
-        head = head.next; // move top pointer
+        head = head.next;
         size--;
         return poppedData;
+
     }
 
-    public int top() {
-        if (isEmpty()) {
-            return -1; // stack empty
+    public int top () {
+        if(isEmpty()) {
+            return -1;
         }
         return head.data;
     }

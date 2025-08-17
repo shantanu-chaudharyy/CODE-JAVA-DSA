@@ -9,10 +9,12 @@ public class StackUsingLinkedList {
         stack.push(3);
 
         System.out.println(stack.top()); // 3
-        System.out.println(stack.pop()); // 3
+      
         System.out.println(stack.top()); // 2
         System.out.println(stack.getSize()); // 2
         System.out.println(stack.isEmpty()); // false
+        stack.pop();
+        System.out.println(stack.top());
     }
 
 }
