@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class StackUse {
+public class M2StackUsee {
     
  public static boolean checkRedundantBrackets(String expression) { // ((a+b))
 		
